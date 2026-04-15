@@ -1,0 +1,40 @@
+{
+  "name": "react-simple-modal",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/react-simple-modal.umd.js",
+  "module": "dist/react-simple-modal.es.js",
+  "types": "dist/react-simple-modal.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/react-simple-modal.es.js",
+      "require": "./dist/react-simple-modal.umd.js"
+    }
+  },
+  "files": ["/dist"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "prepare": "pnpm exec build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.12",
+    "@types/node": "25.6.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.1",
+    "typescript": "6.0.2",
+    "typescript-eslint": "8.58.2",
+    "vite": "8.0.8"
+  }
+}
